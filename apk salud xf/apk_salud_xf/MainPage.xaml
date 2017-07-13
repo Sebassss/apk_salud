@@ -3,14 +3,69 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:apk_salud_xf"
              x:Class="apk_salud_xf.MainPage">
-
+<!--
     <StackLayout Padding="10,12" BackgroundColor="#940f12">
         <StackLayout HorizontalOptions="Center">
-            <Label Text="Aqui va el logo" 
-               VerticalOptions="Center" 
-               HorizontalOptions="Center" />    
+
             
+
+                <Image  Source="mainBanner.png" 
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+
+            
+            <Image Margin="0, 40" HeightRequest="200" BackgroundColor="#000"   Source="mainBanner.png" 
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center" />
+
+
+
         </StackLayout>
     </StackLayout>
+-->
+    
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <Label BackgroundColor="#222" Grid.ColumnSpan="5" Grid.Row="0" Grid.Column="0" />
+        <Label BackgroundColor="#000" Grid.ColumnSpan="3" Text="banner" Grid.Row="1" Grid.Column="1" />
+        <Label BackgroundColor="#222" Grid.ColumnSpan="5" Grid.Row="2" Grid.Column="0" />
+        <Label BackgroundColor="#000" Grid.ColumnSpan="3" Text="slideshow" Grid.Row="3" Grid.Column="1" />
+        <Label BackgroundColor="#222" Grid.ColumnSpan="5" Grid.Row="4" Grid.Column="0" />
+        <Label BackgroundColor="#000" Grid.ColumnSpan="3" Text="mapa" Grid.Row="5" Grid.Column="1" />
+        <Label BackgroundColor="#222" Grid.ColumnSpan="5" Grid.Row="6" Grid.Column="0" />
+        <Label BackgroundColor="#000" Text="protur" Grid.Row="7" Grid.Column="1" />
+        <Label BackgroundColor="#000" Text="ayuda" Grid.Row="7" Grid.Column="3" />
+        <Label BackgroundColor="#222" Grid.ColumnSpan="5" Grid.Row="8" Grid.Column="0" />
+        <Label BackgroundColor="#000" Grid.ColumnSpan="5" Text="footer" Grid.Row="9" Grid.Column="0" />
+
+    </Grid>
+    
+
+
+
+
 
 </ContentPage>
