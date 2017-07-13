@@ -16,6 +16,7 @@ namespace apk_salud_xf
 
         private void btn_protur_Clicked(object sender, EventArgs e)
         {
+            DisplayAlert("Alert", "Mensaje", "OK");
         }
     }
 }
