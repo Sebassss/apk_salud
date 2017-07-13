@@ -2649,10 +2649,10 @@ namespace apk_salud_xf.Droid
 			public const int ic_vol_type_tv_light = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int mainBanner = 2130837743;
+			public const int icon = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int mainlogo = 2130837744;
+			public const int mainBanner = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
 			public const int mr_button_connected_dark = 2130837745;
