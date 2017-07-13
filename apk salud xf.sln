@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apk_salud_xf.Android", "apk salud xf\apk_salud_xf.Android\apk_salud_xf.Android.csproj", "{A73D1E26-36E4-4C90-9AB4-DB37B0008567}"
 EndProject
