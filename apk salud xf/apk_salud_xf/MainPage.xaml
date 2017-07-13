@@ -4,10 +4,9 @@
              xmlns:local="clr-namespace:apk_salud_xf"
              x:Class="apk_salud_xf.MainPage">
 
-    <StackLayout HorizontalOptions="Center">
-        <StackLayout VerticalOptions="Center">
-            
-            <Label Text="Welcome to Xamarin Forms !" 
+    <StackLayout Padding="10,12" BackgroundColor="#940f12">
+        <StackLayout HorizontalOptions="Center">
+            <Label Text="Aqui va el logo" 
                VerticalOptions="Center" 
                HorizontalOptions="Center" />    
             
