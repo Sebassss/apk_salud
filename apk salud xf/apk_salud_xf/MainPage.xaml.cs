@@ -12,6 +12,7 @@ namespace apk_salud_xf
         public MainPage()
         {
             InitializeComponent();
+
         }
     }
 }
