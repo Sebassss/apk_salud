@@ -69,14 +69,24 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             
             <Button 
                 BackgroundColor="#fff"
-                Text="Encontrar centros de Salud"
                 TextColor="#000"
-                Grid.ColumnSpan="2"
+                Grid.ColumnSpan="3"
             ></Button>
+
+            <Label
+                Text="Encontrar Centros de Salud"
+                TextColor="#000"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                
+                ></Label>
             
             <Image 
                 Source="btnMap.png"
@@ -96,14 +106,25 @@
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
             <Button 
-                BackgroundColor="#fff"
-                Text="Turnos"
-                TextColor="#000"                
+                BackgroundColor="#fff"  
+                Grid.ColumnSpan="3"
             ></Button>
-            
+
+            <Label
+                Text="Turnos Programados"
+                TextColor="#000"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                
+                ></Label>
+
             <Image 
                 Source="btnProtur.png"
                 BackgroundColor="Transparent"
