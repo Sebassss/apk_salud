@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:apk_salud_xf"
              x:Class="apk_salud_xf.MainPage">
-<!--
+    <!--
     <StackLayout Padding="10,12" BackgroundColor="#940f12">
         <StackLayout HorizontalOptions="Center">
 
@@ -23,9 +23,14 @@
         </StackLayout>
     </StackLayout>
 -->
+    
+    
 
 
-    <Grid BackgroundColor="#940f12">
+    <Grid 
+        BackgroundColor="#940f12"
+        Margin="10"
+        >
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -42,8 +47,40 @@
 
 
 
-        <Image Source="mainBanner.png" Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0" />
-        <Label BackgroundColor="#000" Grid.ColumnSpan="2" Text="slideshow" Grid.Row="1" Grid.Column="0" />
+        <Image 
+            Source="mainBanner.png" 
+            Grid.ColumnSpan="2" 
+            Grid.Row="0" 
+            Grid.Column="0" 
+            VerticalOptions="StartAndExpand"
+
+            />
+
+        <Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label BackgroundColor="#005" Grid.RowSpan="2" Text="AT" Grid.Row="0" Grid.Column="0"></Label>
+            <Label BackgroundColor="#050" Grid.RowSpan="2" Text="AD" Grid.Row="0" Grid.Column="2"></Label>
+
+            <Label BackgroundColor="#500"  Text="IMAGE" Grid.Row="0" Grid.Column="1"></Label>
+            <Label BackgroundColor="#055"  Text="TEXTO" Grid.Row="1" Grid.Column="1"></Label>
+
+        </Grid>
+        
+        
+        <!--<Label BackgroundColor="#000" Grid.ColumnSpan="2" Text="slidsdsdfeshow" Grid.Row="1" Grid.Column="0" />-->
+
+        
         <!--<Button BackgroundColor="#fff" Image="bntMap.png" Grid.ColumnSpan="2" Text="Encontrar centros de Salud" Grid.Row="2" Grid.Column="0" />
         
         <Button
@@ -91,7 +128,7 @@
             <Image 
                 Source="btnMap.png"
                 BackgroundColor="Transparent"
-                Scale="0.8"
+                Scale="0.5"
             ></Image>
 
         </Grid>
@@ -129,7 +166,6 @@
                 Source="btnProtur.png"
                 BackgroundColor="Transparent"
                 Scale="0.8"
-  
             ></Image>
 
         </Grid>
@@ -144,13 +180,25 @@
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
             <Button 
                 BackgroundColor="#fff"
-                Text="Ayuda"
-                TextColor="#000"                
+                Grid.ColumnSpan="3"
+                
             ></Button>
+
+            <Label
+                Text="Ayuda"
+                TextColor="#000"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                
+                ></Label>
 
             <Image 
                 Source="bntHelp.png"
@@ -164,7 +212,13 @@
 
         <!--<Label BackgroundColor="#000" Text="protur" Grid.Row="3" Grid.Column="0" />-->
         <!--<Label BackgroundColor="#000" Text="ayuda" Grid.Row="3" Grid.Column="1" />-->
-        <Label BackgroundColor="#000" Grid.ColumnSpan="2" Text="footer" Grid.Row="4" Grid.Column="0" />
+        <Label BackgroundColor="#940f12" 
+               Grid.ColumnSpan="2" 
+               Text="Creado por la división informática del Ministerio de Salud de San Juan" 
+               Grid.Row="4" 
+               Grid.Column="0" 
+               VerticalOptions="End"
+               />
 
     </Grid>
     
