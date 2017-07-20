@@ -1,28 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+    
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:apk_salud_xf"
              x:Class="apk_salud_xf.MainPage">
-<!--
-    <StackLayout Padding="10,12" BackgroundColor="#940f12">
-        <StackLayout HorizontalOptions="Center">
-
-            
-
-                <Image  Source="mainBanner.png" 
-                       VerticalOptions="Center"
-                       HorizontalOptions="Center" />
-
-            
-            <Image Margin="0, 40" HeightRequest="200" BackgroundColor="#000"   Source="mainBanner.png" 
-                       VerticalOptions="Center"
-                       HorizontalOptions="Center" />
-
-
-
-        </StackLayout>
-    </StackLayout>
--->
 
 
     <Grid BackgroundColor="#940f12">
@@ -88,11 +69,18 @@
                 
                 ></Label>
             
-            <Image 
+            <Image
+                x:Name="x"
+                ClassId="x"
                 Source="btnMap.png"
                 BackgroundColor="Transparent"
                 Scale="0.8"
-            ></Image>
+            >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+                
+            </Image>
 
         </Grid>
         <!--END botón de mapa-->

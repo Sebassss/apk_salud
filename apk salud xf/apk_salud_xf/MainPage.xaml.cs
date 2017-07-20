@@ -18,6 +18,19 @@ namespace apk_salud_xf
         private void btn_protur_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Alert", "Mensaje", "OK");
+            
+
+
+
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var imageSender = (Image)sender;
+            if(imageSender.ClassId == "x")
+            {
+                Navigation.PushModalAsync(new CapsInfo());
+            }
         }
     }
 }
